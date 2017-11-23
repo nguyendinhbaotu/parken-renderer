@@ -20,6 +20,7 @@ RUN apt-get update && \
     cmake ../VTK5.10.1 -DBUILD_SHARED_LIBS=ON -DCMAKE_C_FLAGS=-DGLX_GLXEXT_LEGACY -DCMAKE_CXX_FLAGS=-DGLX_GLXEXT_LEGACY -Wno-dev &&\
     make install
 
+# Install npm packages
 RUN npm install
 
 # Bundle app source
